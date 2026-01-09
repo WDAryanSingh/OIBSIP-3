@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart To-Do App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smart To-Do</h1>
+        <p class="subtitle">Organize your day. Stay productive.</p>
+
+        <!-- ADD TASK -->
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="What do you want to do today?">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- PENDING TASKS -->
+        <div class="task-section">
+            <h2>⏳ Pending Tasks</h2>
+            <ul id="pendingTasks"></ul>
+        </div>
+
+        <!-- COMPLETED TASKS -->
+        <div class="task-section completed">
+            <h2>✅ Completed Tasks</h2>
+            <ul id="completedTasks"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
